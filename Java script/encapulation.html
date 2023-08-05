@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class A{
+            constructor(){
+            var name
+            var age
+            }
+            a(){
+                return  this.name
+            }
+            b(name){
+            this.name=name
+            }
+            c(){
+                return this.age
+            }
+            d(age){
+                this.age=age
+            }
+        }
+        var e=new A()
+        e.b("abc")
+        e.d("12")
+        document.write(e.a()+" "+e.c())
+
+    </script>
+</body>
+</html>

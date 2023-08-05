@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+            border-spacing: 10px;
+            width: 50%;
+        }
+        td,th{
+            padding: 10px;
+            width: max-content;
+            background-color: aqua;
+        }
+        button{
+            background-color: wheat;
+            border: none;
+            text-align: center;
+            width: 32%;
+            height: 40px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <table>
+            <form>
+                <tr>
+                    <th colspan="2" style="color: red; background-color: yellow; height: 50px;"><h1>Registration Form</h1></th>
+                </tr>
+                <tr>
+                    <td><label>Enter Name</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label>Adress</label></td>
+                    <td><textarea style="height: max-content; width: max-content;"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Select Game</label></td>
+                    <td><input type="radio" id="hockey" name="games">
+                        <label for="hockey">Hockey</label><br>
+                        <input type="radio" id="football" name="games">
+                        <label for="football">Football</label><br>
+                        <input type="radio" id="cricket" name="games">
+                        <label for="cricket">Cricket</label><br>
+                        <input type="radio" id="volleyball" name="games">
+                        <label for="volleyball">Volleyball</label>
+                        </td>  
+                </tr>
+                <tr>
+                <td><label>Gender</label></td>
+                <td><input type="radio" id="male" name="gender"><label for="male">Male</label><input type="radio" id="female" name="gender"><label for="female">Female</label>
+                </td>
+                </tr>
+                <tr>
+                    <td><label>Enter your age</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td><label>Select Photo</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 50px;"><button>Click me</button>  <button>Reset</button>  <button>Submit</button></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

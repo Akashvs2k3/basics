@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: rgb(252, 182, 6);
+        }
+         th,td{
+height: 20px;
+padding: 10px;
+background-color: 	#00001C;
+}
+        
+        table{
+            border-spacing: 10px;
+            width: max-content;
+            border-collapse: collapse;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <th colspan="2" style="background-color: orangered; height: 30px;" >Sign up</th>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>First Name</label></td>
+                <td><input type="text" placeholder="enter your First name"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Last Name</label></td>
+                <td><input type="text" placeholder="enter your Last name"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;" ><label>Date Of Birth</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Gender</label></td>
+                <td><input type="radio" id="male" name="gender"><label for="male">Male</label><input type="radio" id="female" name="gender"><label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Country</label></td>
+                <td><select>
+                    <option>Country</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>Africa</option>
+                    <option>Japan</option>
+                </select> </td>
+            </tr>
+            <tr>
+               <td style="text-align: right;"> <label>Email</label></td>
+            <td><input type="email" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><label>Phone</label></td>
+                <td><input type="number" placeholder="enter your number"></td>
+            </tr>
+            <tr>
+               <td style="text-align: right;"><label>Password</label></td>
+               <td><input type="password" placeholder="enter your password"></td>
+            </tr>
+                <tr>
+                    <td style="text-align: right;"><label>Confirm Password</label></td>
+                    <td><input type="password" placeholder="Confirm your password"> </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: end;"><input type="checkbox"><label>I Agree to this term of use</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: end; background-color: yellow; height: 30px;">
+                        <button style="background-color: rgb(90, 7, 21); border: none;">Submit</button> <button style="background-color: red; border: none;">Cancel</button></td>
+                </tr>
+          
+           
+        </form>
+    </table>
+</div>
+</body>
+</html>

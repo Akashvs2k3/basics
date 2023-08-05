@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateform1(){
+            var name=document.getElementById("nam").value;
+            var pass=document.getElementById("pass").value;
+
+            if (name == null || name=="") {
+                document.getElementById("namespan").innerHTML="please enter your name"
+                return false
+                
+            } else if(pass.length<6){
+                document.getElementById("passspan").innerHTML="password contan more than 6 charcters"
+                return false
+                
+            }
+        }
+        function clearsp(sp){
+            document.getElementById(sp).innerHTML=""
+
+        }
+
+    </script>
+    <form id="myForm" method="post" action="abc.html" onsubmit=" return validateform1()">
+    <label>Name :</label>
+    <input type="text" id="nam" onkeyup="clearsp('namespan')"><br>
+    <span id="namespan" style="color: red;"></span>
+    &nbsp; &nbsp; &nbsp; <br>
+
+    <label>Password :</label>
+    <input type="password" id="pass" onkeyup="clearsp('passspan')"><br>
+    <span id="passspan" style="color: red;"></span>
+    &nbsp; &nbsp; &nbsp; <br>
+
+    <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>

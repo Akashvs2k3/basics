@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class cars{
+            constructor(cmpny){
+                this.cmpny="benz"
+            }
+        }
+       class ncar extends cars{
+        constructor(a,b){
+            super()
+            this.a=a
+            this.b=b
+        }
+       }
+       var c=new ncar("speed","power")
+       document.write(c.cmpny+" "+c.a+" "+c.b)
+    </script>
+</body>
+</html>
